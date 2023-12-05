@@ -22,17 +22,19 @@ class Pet {
 		this.species = species;
 		this.breed = breed;
 	}
-	hasOwnerMoreThanOnePet() {
-		let booleano;
-		for (let i = 0; i < petRegistrati.length; i++) {
-			const element = petRegistrati[i];
-
-			element.ownerName === this.ownerName
-				? (booleano = true)
-				: (booleano = false);
-		}
-		return booleano;
+	hasSameOwner(petDaConfrontare) {
+		return (
+			this.ownerName.toLowerCase() === petDaConfrontare.ownerName.toLowerCase()
+		);
 	}
+	static checkOwners(istanza1, istanza2) {
+		return (
+			istanza1.ownerName.toLowerCase() === istanza2.ownerName.toLowerCase()
+		);
+	}
+}
+function compareOwners() {
+	console.log(petRegistrati[0].hasSameOwner(petRegistrati[1]));
 }
 
 window.onload = () => {
