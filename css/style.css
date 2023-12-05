@@ -1,0 +1,17 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+.pet {
+    background-color: white;
+    padding-block: 0.5rem;
+    border-radius: 8px;
+    margin-block: 1rem;
+
+}
+
+.pet>span {
+    padding-left: 10px;
+}
+
+div.pet>span>div>span {
+    color: rgb(1, 167, 167);
+}
