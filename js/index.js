@@ -22,7 +22,7 @@ class Pet {
 		this.species = species;
 		this.breed = breed;
 	}
-	static hasOwnerMoreThanOnePet() {
+	hasOwnerMoreThanOnePet() {
 		let booleano;
 		for (let i = 0; i < petRegistrati.length; i++) {
 			const element = petRegistrati[i];
@@ -67,6 +67,9 @@ window.onload = () => {
 		mioSpan.innerHTML = `<div><span>Nome: </span>${petName.value} <span>Proprietario: </span>${ownerName.value} <span>Specie: </span>${species.value} <span>Razza: </span>${breed.value}</div> <i class="bi bi-x-circle-fill text-danger fs-3 me-4"></i
         >`;
 		petName.value = "";
+		ownerName.value = "";
+		species.value = "";
+		breed.value = "";
 
 		mioDiv.appendChild(mioSpan);
 		listaPets.appendChild(mioDiv);

@@ -14,4 +14,12 @@
 
 div.pet>span>div>span {
     color: rgb(1, 167, 167);
+    font-size: 1rem;
+    padding-left: 40px;
+}
+
+span {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
 }
